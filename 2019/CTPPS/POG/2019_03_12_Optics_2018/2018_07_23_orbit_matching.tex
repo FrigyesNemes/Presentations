@@ -1,0 +1,258 @@
+\documentclass{beamer}
+
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,epstopdf}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{wasysym}
+\usepackage{color}
+
+\usepackage{listings}
+
+\usetheme{Warsaw}
+\setbeamertemplate{footline}{\hspace{2mm}\insertauthor \;\;\; \insertshorttitle \hspace{40mm} \insertframenumber/\inserttotalframenumber}
+\setbeamertemplate{navigation symbols}{}
+
+\title[TOTEM Collaboration Meeting]{\large Optics status \& developments}\vspace{10mm}
+\subtitle{\tiny }
+
+\author{F. Nemes}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}\scriptsize
+	\Large
+	\begin{center}
+		The stability of ATS optics
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The equation of motion and the ATS principle}\scriptsize
+
+		\begin{equation}
+		    x^{\prime\prime}-k(s)x=0\,,\,\,\,\,\,\,k = \frac{1}{B\cdot\rho} \frac{{\rm d} B_{y}}{{\rm d}x}\,.
+		\label{Hillsequation}
+		\end{equation}
+		\begin{itemize}
+			\item Beam equation, harmonic oscillator with magnetic strength $k(s)$
+			\item Ansatz: $x(s)=\sqrt{{\color{red}\beta_x(s)}\varepsilon}\cos\left[\mu_x(s)+\phi_0\right]$
+			\item Eq.~(\ref{Hillsequation}) needs {\bf boundary conditions}
+			\item $\Delta\mu_{x,y}=\int^{\text{\tiny RP}}_{\text{\tiny IP}}\frac{{\rm d}s}{\beta(s)_{x,y}}$
+		\end{itemize}\vspace{2mm}
+	\begin{equation}\scriptsize
+	    {\color{blue}L_{x,y}}=\sqrt{\beta_{x,y}{\color{red}\beta_{x,y}^{*}}}\sin\Delta\mu_{x,y}\approx\sqrt{\beta_{x,y}{\color{red}\beta_{x,y}^{*}}}\Delta\mu_{x,y}
+	    \label{eq:deltaphi}
+        \end{equation}
+	
+		
+	\end{block}
+	
+	\begin{block}{The ATS solution for LHC around IP5 (and IP1)}
+	
+
+		\begin{itemize}
+			\item IP5 : {\bf constant} magnets $k(s)$. But changes at IP2 and 8.
+			\item $\beta^{*}$ at IP5: via boundary conditions 
+			\item Great stability at IP5 and 1 (discussion with S. Fartoukh)
+			\item Remains valid for {\color{red}\bf Run 3}
+		\end{itemize}
+
+	\end{block}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\Large
+	\begin{center}
+		Optics constraints from elastics\\{\small (elastic candidates from Jan)}
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Notes}
+		The used vertical RP detectors
+		\begin{itemize}
+			\item RP210 far, XRPV.D6R5.B1 at 213 m
+			\item RP220 far, XRPV.B6R5.B1 at 220 m
+			\item $\theta_{y}=(y_{\rm far} - y_{\rm near})/ d$, where $d=7$~m
+		\end{itemize}
+		
+		Data sets:
+		\begin{enumerate}
+			\setcounter{enumi}{-1}
+		\item DS-xangle-130-beta-25-dgn-45b-56t
+		\item DS-xangle-130-beta-25-dgn-45t-56b
+		\item DS-xangle-130-beta-30-dgn-45b-56t
+		\item DS-xangle-130-beta-30-dgn-45t-56b
+		\item DS-xangle-131-beta-30-dgn-45b-56t
+		\item DS-xangle-131-beta-30-dgn-45t-56b
+		\item DS-xangle-160-beta-30-dgn-45b-56t
+		\item DS-xangle-160-beta-30-dgn-45t-56b
+		\end{enumerate}
+
+	\end{block}
+\end{frame}
+
+
+
+\begin{frame}\scriptsize
+	\begin{block}{Angle and position correlations in RP220 far, per arm \& data set}\scriptsize
+		\centering
+             \includegraphics[width=0.9\textwidth]{theta_y_vs_y_summary_RP_220_far.png}
+	\end{block}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Slope of angle and position correlations in RP220 left far}\scriptsize
+	\begin{itemize}
+		\item 	Nominal value = -0.019146 $\pm$ 0.002 rad/m
+		\item Measured values fitted with constant:
+		\item p0 = -0.019663   $\pm$   0.00045 rad/m
+		\item $\chi^{2}$/ndf = 3.03 / 6
+	\end{itemize}\vspace{-5mm}
+
+	\begin{figure}
+		\centering
+             \includegraphics[width=0.9\textwidth]{summary_220_left_far_theta_y_vs_y_constraints.png}
+	\end{figure}
+	\end{block}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{2018: the minimum $x_{0}$ position in the hor. RP data}
+	\begin{itemize}
+		\item RP 210 far, left arm (213 m)
+		\item Agrees with 2017 ($x_{0,2017}=2.42\pm 0.05$)
+	\end{itemize}\vspace{-5mm}
+		\begin{center}
+        	     \includegraphics[width=0.9\textwidth]{left_RP210_far_213_m.png}
+		\end{center}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}\scriptsize
+	\Large
+	\begin{center}
+		The analytical method compared to\\ $\chi^{2}$ based (CMSSW official version)
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Comparison of $\xi$ from CMSSW and analytical method}
+		{\color{black}
+		\begin{align}
+			\xi&=\frac{L_{x,{\rm far}}\cdot x_{\rm near} - L_{x,{\rm near}}\cdot x_{\rm far}}{ D_{x,{\rm near}}\cdot L_{x,{\rm far}} -  D_{x,{\rm far}}\cdot L_{x,{\rm near}}} \label{reconstruction_formula_x}
+		\end{align}}\vspace{-4mm}
+
+	\begin{itemize}
+		\item Can be derived with $x^{*}=0$ assumption (Simone)\vspace{-1mm}
+		\item Speed comparison (with minimum working example code)
+			\begin{itemize}\scriptsize
+				\item $\chi^{2}$ based ($\approx$CMSSW):  212 seconds
+				\item Analytical: 23 sec, {\bf\color{blue} $\approx$ 9.2 faster}
+			\end{itemize}
+		\item $\xi$-comparison plot from Ksenia:
+	\end{itemize}\vspace{-4mm}
+		\begin{center}
+        	     \includegraphics[width=0.5\textwidth]{MRPcheck.pdf}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{X-angle levelling and its proton transport model}
+	\begin{itemize}
+		\item "Optics parameterization" (Hubert): {\bf\color{red} no} x-angle parameter
+		\item $x(\xi)$, $L_{y}$,... curves (\href{http://cds.cern.ch/record/2256433?ln=en}{\color{blue} \underline{\ttfamily PPS optics note}})
+		\begin{itemize}\scriptsize
+			\item Calculated per year and per (main) x-angle as ROOT ntuple
+			\item x-angle interpolation for a study (\href{https://indico.cern.ch/event/760670/contributions/3161720/attachments/1726564/2789229/PPS_General_meeting_analytical_reconstruction.pdf}{\color{blue} \underline{\ttfamily PPS General meeting})}
+			\item Solves $x$-angle levelling (2017, 2018): needed for reconstruction and MC
+
+		\end{itemize}
+	\end{itemize}
+	Implemented for PPS official reconstruction 
+	\begin{itemize}\scriptsize
+			\item As "optical functions" (Jan, Laurent) (\href{https://indico.cern.ch/event/794378/contributions/3300540/attachments/1790677/2917159/jan_kaspar_reco_sw.pdf}{\color{blue} \underline{\ttfamily PPS General Meeting}})\vspace{-1mm}
+			\item  \href{https://github.com/CTPPS/cmssw/tree/ctpps_initial_proton_reconstruction_CMSSW_10_2_0/RecoCTPPS/ProtonReconstruction}{\color{blue} \underline{\ttfamily PR object}} and scripts (Jan)\vspace{-1mm}
+			\item In condDB (Wagner)
+	\end{itemize}	
+
+	
+	
+	\vspace{2mm}
+	
+
+	Proposal for next step: analytical method in CMSSW
+
+	\end{block}
+
+	\begin{block}{General comments on reconstruction}
+	\begin{enumerate}
+		\item Proton transport
+		\item $\chi^{2}$ minimization of track and MC coordinates
+	\end{enumerate}
+
+	\end{block}
+
+\end{frame}
+
+\begin{frame}\scriptsize
+	\Large
+	\begin{center}
+		pA reminder
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\vspace{-5mm}
+	\begin{block}{Consistent with 13$\times\sigma$ ! $\xi$ dependent shape...}
+		\begin{figure}
+			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_top_no_T2_y_yfar_per_ynear_cut.pdf}
+			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_bottom_no_T2_y_yfar_per_ynear_cut.pdf}			
+			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_top_no_T2_y_yfar_per_ynear_cut_cont.pdf}						
+			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_bottom_no_T2_y_yfar_per_ynear_cut_cont.pdf}			
+		\end{figure}
+	\end{block}\vspace{-8mm}
+
+\end{frame}
+
+\begin{frame}
+	\vspace{-2mm}
+	\begin{block}{Run 8929: very preliminary $t$-distribution + theory plot (right)}
+		\begin{figure}
+			\includegraphics[width=0.65\textwidth]{Figures/pA/8929/t_distribution.pdf}
+			\includegraphics[width=0.33\textwidth]{Figures/pA/Cross_section_at_4_5_sigma_new.pdf}
+		\end{figure}
+		\vspace{-5mm}
+		\begin{itemize}
+			\item not normalized yet
+			\item Run 8928: similar structure, less event per arm ($\approx2\times10^{4}$)
+		\end{itemize}			
+	\end{block}
+
+\end{frame}
+
+
+\begin{frame}\scriptsize
+	\begin{block}{Summary}
+	\begin{itemize}\scriptsize
+			\item ATS optics is more stable than expected (Run 3)
+			\item Optical functions replaces "optics parametrization" for 2017 and 18 (x-angle)
+			\item 2018 optics constraints: more information than 2017
+			\item Analytical formulae compared to CMSSW 
+			\begin{itemize}\scriptsize
+				\item About 9 times faster
+				\item Gives close numerical results to official reco.
+			\end{itemize}
+	\end{itemize}	
+	\end{block}
+
+\end{frame}
+
+\end{document}

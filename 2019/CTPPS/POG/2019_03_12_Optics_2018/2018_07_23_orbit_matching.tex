@@ -13,7 +13,7 @@
 \setbeamertemplate{footline}{\hspace{2mm}\insertauthor \;\;\; \insertshorttitle \hspace{40mm} \insertframenumber/\inserttotalframenumber}
 \setbeamertemplate{navigation symbols}{}
 
-\title[TOTEM Collaboration Meeting]{\large Optics status \& developments}\vspace{10mm}
+\title[PPS, Proton POG Meeting]{\large Optics 2018, minimum $x_{0}$ measurement}\vspace{10mm}
 \subtitle{\tiny }
 
 \author{F. Nemes}
@@ -24,15 +24,334 @@
 	\titlepage
 \end{frame}
 
-\begin{frame}\scriptsize
-	\Large
+\begin{frame}
 	\begin{center}
-		The stability of ATS optics
+	\Large
+	$x$-angle 130~$\mu$rad, $\beta^{*}=0.25$ m\\ {\small (Run 314276, 2018, April)}
 	\end{center}
 \end{frame}
 
 \begin{frame}\scriptsize
-	\begin{block}{The equation of motion and the ATS principle}\scriptsize
+	\begin{block}{The "neck"}
+	RP3, left arm, $s=$213 m
+             \includegraphics[width=1.0\textwidth]{fig1.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Monte Carlo plots: hitmap with and without $\theta_{x}^{*}$}
+    		\begin{itemize}
+			\item The smearing due to scattering angle
+			\item In the data we cannot switch of $L_{x}$ or so
+			\item However, one can make a cut on $\theta_{x}$
+		\end{itemize}
+		\begin{align}
+			x = v_{x}\cdot x^{*} + {\color{red} L_{x}\cdot \theta^{*}_{x}}+D_{x}\cdot \xi 	
+		\end{align}
+
+             \includegraphics[width=0.48\textwidth]{x_y_hitmap_near.pdf}
+             \includegraphics[width=0.48\textwidth]{coll.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The $x$-coordinate difference between RP23 and RP3}
+    		\begin{itemize}
+			\item Red line shows the cut line (mean)
+			\item The $\sigma$ of the cut is 0.0125~mm
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{dxrp23rp3.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The x-y hitmap after the dx cut}
+    		\begin{itemize}
+			\item The angular smearing is close to 0
+			\item Note: for these events $\xi_{\rm singleRP}=\xi_{\rm multiRP}$
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{RP3_after_cut.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The RMS of the $y$-coordinate}
+    		\begin{itemize}
+			\item The minimum shows the quick $L_{y}$ cross-over 0
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{x0130muradrp3.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+	\Large
+	$x$-angle 160~$\mu$rad	\\ {\small (Run 314247, 2018, April)}
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The RP3 x-y hitmap after the dx cut}
+             \includegraphics[width=1.0\textwidth]{160murad_neck.pdf}
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}\scriptsize
+	\begin{block}{The RMS of the $y$-coordinate and $x_{0}$}
+    		\begin{itemize}
+			\item A bit unexpected (see later with September 130 $\mu$rad data)
+			\item Would break dispersion as function of x-angle from 2017
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{160muradRMS.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Overlap between RP3, 4 and 5}
+             \includegraphics[width=1.0\textwidth]{overlap.png}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Horizontal alignment test between RP3, 4 and 5}
+             \includegraphics[width=1.0\textwidth]{x_alignment_160_murad.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Elastics at 160~$\mu$rad: single arm correlations}
+    		\begin{itemize}
+			\item RP4 and 24: top verticals
+			\item TOTEM methods to identify elastics
+			\item Note: focusing
+		\end{itemize}
+	\begin{center}
+             \includegraphics[width=0.48\textwidth]{160_murad_x_elastics.pdf}
+             \includegraphics[width=0.48\textwidth]{160_murad_y_elastics.pdf}\\
+	\end{center}
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}\scriptsize
+	\begin{block}{Elastics at 160~$\mu$rad: test of absolute horizontal alignment}
+    		\begin{itemize}
+			\item $x_{0}\approx$ 2.33 - 0.23 = 2.1 mm
+		\end{itemize}
+	\begin{center}
+            \includegraphics[width=0.8\textwidth]{beam_spot.pdf}
+	\end{center}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+	\Large
+	Remaining alignment tests for $x$-angle 130~$\mu$rad
+	\\ {\small (2018, April)}
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Overlap between RP3, 4 and 5}
+             \includegraphics[width=1.0\textwidth]{130_murad_overlap.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Test of "absolute" alignment with elastics}
+             \includegraphics[width=1.0\textwidth]{elastic.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+	\Large
+	$x$-angle 130~$\mu$rad, $\beta^{*}=0.25$~m \\ {\small (Run 323316, 2018, September)}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}\scriptsize
+	\begin{block}{The "neck" after cut}
+    		\begin{itemize}
+			\item Remains a bit noisy even after cut in the important range
+			\item $x_{0}$ clearly below 2.5 mm
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{Run_323316_130_murad_beta_star_0p25_m_neck.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The dx cut}
+             \includegraphics[width=1.0\textwidth]{Run_323316_130_murad_beta_star_0p25_m_deltax.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The $x_{0}$ point}
+    		\begin{itemize}
+			\item $x_{0}$ seems to be 7~\% lower than in April
+			\item Alignment, optics, resolution, $x$-angle ?
+		\end{itemize}
+
+        \includegraphics[width=1.0\textwidth]{Run_323316_130_murad_beta_star_0p25_m/min2.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The absolute alignment}
+    		\begin{itemize}
+			\item Ok, even with TProfiles 
+			\item Common in events in RP 3, 4, 5 are also Ok
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{Run_323316_130_murad_beta_star_0p25_m/elastic_for_meeting.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The vertical effective length $L_{y}$}
+    		\begin{itemize}
+			\item Ok
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{Run_323316_130_murad_beta_star_0p25_m/optics_constraint_2018.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+	\Large
+	$x$-angle 130~$\mu$rad, $\beta^{*}=0.27$~m \\ {\small (Run 323311, 2018, September)}
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The $x_{0}$ point}
+    		\begin{itemize}
+			\item Ok
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{Run_323311_130_murad_beta_star_0p27_m/min.pdf}\\
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Absolute alignment and the $x_{0}$ point}
+    		\begin{itemize}
+			\item $x_{0}\approx$ 2.382 mm + 0.06 mm= 2.442 mm
+		\end{itemize}
+             \includegraphics[width=0.7\textwidth]{Run_323311_130_murad_beta_star_0p27_m/elastic_for_meeting.pdf}\\
+	\end{block}
+
+	\begin{block}{Summary of April and September}
+    		\begin{itemize}
+			\item $130~\mu$rad: $x_{0}\approx 2.445$ mm $\pm$ 0.08
+			\item $160~\mu$rad: $x_{0}\approx 2.10$ mm
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+	\Large {\color{blue} Right arm}\\
+	$x$-angle 130~$\mu$rad, $\beta^{*}=0.25$ m\\ {\small (Run 314276, 2018, April)}
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The $x_{0}$ point in RP103}
+    		\begin{itemize}
+			\item Calibration point is not visible
+			\item 2017 data suggest a factor 1.298 between left and right arm
+			\item $x_{0}$ "should" be around 1.883 $\pm$ 0.08
+		\end{itemize}
+             \includegraphics[width=1.0\textwidth]{Run_314276/neck_rp_103_m.pdf}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{The $x_{0}$ point in RP103}
+    		\begin{itemize}
+			\item Parabolic fit
+			\item First points not used, fit quality very low
+			\item Extrapolation point is OK
+			\item Dimuon data will help (also for left arm!)
+		\end{itemize}
+		\begin{center}
+             \includegraphics[width=0.8\textwidth]{Run_314276/neck_rp_103_variance_fit_meeintg.pdf}
+		\end{center}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{A curiosity in the right arm from September}
+    		\begin{itemize}
+			\item Reason: $L_{x}=0$ close to RP
+			\item No coupling (MQSX off)
+			\item Good for optics checks!
+		\end{itemize}
+	\begin{center}
+             \includegraphics[width=0.48\textwidth]{RP_104_105_elastics_curiosity.pdf}\\
+             \includegraphics[width=0.48\textwidth]{x_check.pdf}
+		\end{center}
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+	\Large
+	Notes on beam divergence
+	\end{center}
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Based on emittance and beam spot}
+             \href{https://indico.cern.ch/event/672586/contributions/2751640/attachments/1539182/2412882/Summary.pdf}{\color{blue} \underline{\ttfamily Beam divergence study}} from CT-PPS Physics meeting
+     		\begin{itemize}
+			\item Lorentz $\gamma_{\rm proton}=\frac{E_{\rm beam}}{M_{\rm proton}}=\frac{6500~{\rm GeV}}{0.93827~{\rm GeV}}$
+			\item $\sigma_{x,y}^{*}=\sqrt{\frac{\beta_{x,y}^{*}\cdot\epsilon}{\gamma_{\rm proton}}}=\sqrt{\frac{0.4\cdot3.5\cdot10^{-6}}{\gamma_{\rm proton}}}=14~\mu$m ($\epsilon$ stands for the emittance)
+			\item The figure shows the physics run closest to the alignment run (from Jonathan)
+			\item Excellent agreement between data and model
+			\item Page 6: beam divergence $\sigma(x')^{*}=\sigma(x)^{*}/\beta^{*}=14~\mu m / 0.4 m=35~\mu rad$ 
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[trim = 0mm 140mm 0mm 0mm, clip, width=0.46\textwidth]{BS_Width_Fill6193_0.pdf}
+		\end{figure}\vspace{-4mm}
+
+
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}\scriptsize
+	\begin{block}{Why $\sigma(x')^{*}=\sigma(x)^{*}/\beta^{*}$ ?}\scriptsize
 
 		\begin{equation}
 		    x^{\prime\prime}-k(s)x=0\,,\,\,\,\,\,\,k = \frac{1}{B\cdot\rho} \frac{{\rm d} B_{y}}{{\rm d}x}\,.
@@ -40,219 +359,35 @@
 		\end{equation}
 		\begin{itemize}
 			\item Beam equation, harmonic oscillator with magnetic strength $k(s)$
-			\item Ansatz: $x(s)=\sqrt{{\color{red}\beta_x(s)}\varepsilon}\cos\left[\mu_x(s)+\phi_0\right]$
-			\item Eq.~(\ref{Hillsequation}) needs {\bf boundary conditions}
-			\item $\Delta\mu_{x,y}=\int^{\text{\tiny RP}}_{\text{\tiny IP}}\frac{{\rm d}s}{\beta(s)_{x,y}}$
+			\item Ansatz: $x(s)=\sqrt{{\color{red}\beta_x(s)}\varepsilon}\cos\left[\phi_x(s)+\phi_0\right]$ and $\phi'=\frac{1}{\beta}$
+			\item Its derivative $x(s)'$ is {\color{blue} the beam divergence} and $x(s)'\propto \sqrt{\frac{\varepsilon}{\beta(s)}}\sin(...)$ 
+			\item At points $\beta'=0$, see Wilson's book, the thesis of Hubert or mine
+			\item Phase space ellipse and area: $\pi\sigma(x)\sigma(x')=\pi\epsilon=constant$ (Liouville theorem)
 		\end{itemize}\vspace{2mm}
-	\begin{equation}\scriptsize
-	    {\color{blue}L_{x,y}}=\sqrt{\beta_{x,y}{\color{red}\beta_{x,y}^{*}}}\sin\Delta\mu_{x,y}\approx\sqrt{\beta_{x,y}{\color{red}\beta_{x,y}^{*}}}\Delta\mu_{x,y}
-	    \label{eq:deltaphi}
-        \end{equation}
-	
-		
-	\end{block}
-	
-	\begin{block}{The ATS solution for LHC around IP5 (and IP1)}
-	
-
-		\begin{itemize}
-			\item IP5 : {\bf constant} magnets $k(s)$. But changes at IP2 and 8.
-			\item $\beta^{*}$ at IP5: via boundary conditions 
-			\item Great stability at IP5 and 1 (discussion with S. Fartoukh)
-			\item Remains valid for {\color{red}\bf Run 3}
-		\end{itemize}
-
-	\end{block}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\Large
-	\begin{center}
-		Optics constraints from elastics\\{\small (elastic candidates from Jan)}
-	\end{center}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\begin{block}{Notes}
-		The used vertical RP detectors
-		\begin{itemize}
-			\item RP210 far, XRPV.D6R5.B1 at 213 m
-			\item RP220 far, XRPV.B6R5.B1 at 220 m
-			\item $\theta_{y}=(y_{\rm far} - y_{\rm near})/ d$, where $d=7$~m
-		\end{itemize}
-		
-		Data sets:
-		\begin{enumerate}
-			\setcounter{enumi}{-1}
-		\item DS-xangle-130-beta-25-dgn-45b-56t
-		\item DS-xangle-130-beta-25-dgn-45t-56b
-		\item DS-xangle-130-beta-30-dgn-45b-56t
-		\item DS-xangle-130-beta-30-dgn-45t-56b
-		\item DS-xangle-131-beta-30-dgn-45b-56t
-		\item DS-xangle-131-beta-30-dgn-45t-56b
-		\item DS-xangle-160-beta-30-dgn-45b-56t
-		\item DS-xangle-160-beta-30-dgn-45t-56b
-		\end{enumerate}
-
-	\end{block}
-\end{frame}
-
-
-
-\begin{frame}\scriptsize
-	\begin{block}{Angle and position correlations in RP220 far, per arm \& data set}\scriptsize
-		\centering
-             \includegraphics[width=0.9\textwidth]{theta_y_vs_y_summary_RP_220_far.png}
-	\end{block}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\begin{block}{Slope of angle and position correlations in RP220 left far}\scriptsize
-	\begin{itemize}
-		\item 	Nominal value = -0.019146 $\pm$ 0.002 rad/m
-		\item Measured values fitted with constant:
-		\item p0 = -0.019663   $\pm$   0.00045 rad/m
-		\item $\chi^{2}$/ndf = 3.03 / 6
-	\end{itemize}\vspace{-5mm}
-
-	\begin{figure}
-		\centering
-             \includegraphics[width=0.9\textwidth]{summary_220_left_far_theta_y_vs_y_constraints.png}
-	\end{figure}
-	\end{block}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\begin{block}{2018: the minimum $x_{0}$ position in the hor. RP data}
-	\begin{itemize}
-		\item RP 210 far, left arm (213 m)
-		\item Agrees with 2017 ($x_{0,2017}=2.42\pm 0.05$)
-	\end{itemize}\vspace{-5mm}
-		\begin{center}
-        	     \includegraphics[width=0.9\textwidth]{left_RP210_far_213_m.png}
-		\end{center}
-	\end{block}
-\end{frame}
-
-
-\begin{frame}\scriptsize
-	\Large
-	\begin{center}
-		The analytical method compared to\\ $\chi^{2}$ based (CMSSW official version)
-	\end{center}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\begin{block}{Comparison of $\xi$ from CMSSW and analytical method}
-		{\color{black}
-		\begin{align}
-			\xi&=\frac{L_{x,{\rm far}}\cdot x_{\rm near} - L_{x,{\rm near}}\cdot x_{\rm far}}{ D_{x,{\rm near}}\cdot L_{x,{\rm far}} -  D_{x,{\rm far}}\cdot L_{x,{\rm near}}} \label{reconstruction_formula_x}
-		\end{align}}\vspace{-4mm}
-
-	\begin{itemize}
-		\item Can be derived with $x^{*}=0$ assumption (Simone)\vspace{-1mm}
-		\item Speed comparison (with minimum working example code)
-			\begin{itemize}\scriptsize
-				\item $\chi^{2}$ based ($\approx$CMSSW):  212 seconds
-				\item Analytical: 23 sec, {\bf\color{blue} $\approx$ 9.2 faster}
-			\end{itemize}
-		\item $\xi$-comparison plot from Ksenia:
-	\end{itemize}\vspace{-4mm}
-		\begin{center}
-        	     \includegraphics[width=0.5\textwidth]{MRPcheck.pdf}
-		\end{center}
-	\end{block}
-\end{frame}
-
-\begin{frame}\scriptsize
-	\begin{block}{X-angle levelling and its proton transport model}
-	\begin{itemize}
-		\item "Optics parameterization" (Hubert): {\bf\color{red} no} x-angle parameter
-		\item $x(\xi)$, $L_{y}$,... curves (\href{http://cds.cern.ch/record/2256433?ln=en}{\color{blue} \underline{\ttfamily PPS optics note}})
-		\begin{itemize}\scriptsize
-			\item Calculated per year and per (main) x-angle as ROOT ntuple
-			\item x-angle interpolation for a study (\href{https://indico.cern.ch/event/760670/contributions/3161720/attachments/1726564/2789229/PPS_General_meeting_analytical_reconstruction.pdf}{\color{blue} \underline{\ttfamily PPS General meeting})}
-			\item Solves $x$-angle levelling (2017, 2018): needed for reconstruction and MC
-
-		\end{itemize}
-	\end{itemize}
-	Implemented for PPS official reconstruction 
-	\begin{itemize}\scriptsize
-			\item As "optical functions" (Jan, Laurent) (\href{https://indico.cern.ch/event/794378/contributions/3300540/attachments/1790677/2917159/jan_kaspar_reco_sw.pdf}{\color{blue} \underline{\ttfamily PPS General Meeting}})\vspace{-1mm}
-			\item  \href{https://github.com/CTPPS/cmssw/tree/ctpps_initial_proton_reconstruction_CMSSW_10_2_0/RecoCTPPS/ProtonReconstruction}{\color{blue} \underline{\ttfamily PR object}} and scripts (Jan)\vspace{-1mm}
-			\item In condDB (Wagner)
-	\end{itemize}	
-
-	
-	
-	\vspace{2mm}
-	
-
-	Proposal for next step: analytical method in CMSSW
-
-	\end{block}
-
-	\begin{block}{General comments on reconstruction}
-	\begin{enumerate}
-		\item Proton transport
-		\item $\chi^{2}$ minimization of track and MC coordinates
-	\end{enumerate}
-
-	\end{block}
-
-\end{frame}
-
-\begin{frame}\scriptsize
-	\Large
-	\begin{center}
-		pA reminder
-	\end{center}
-\end{frame}
-
-\begin{frame}
-	\vspace{-5mm}
-	\begin{block}{Consistent with 13$\times\sigma$ ! $\xi$ dependent shape...}
+		The Gaussian shape of $\sigma(x')$ by TOTEM at 13 TeV from CERN preprint:
 		\begin{figure}
-			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_top_no_T2_y_yfar_per_ynear_cut.pdf}
-			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_bottom_no_T2_y_yfar_per_ynear_cut.pdf}			
-			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_top_no_T2_y_yfar_per_ynear_cut_cont.pdf}						
-			\includegraphics[width=0.49\textwidth, height=38.2mm]{Figures/pA/8929/x_far_minus_x_near_distribution_right_arm_bottom_no_T2_y_yfar_per_ynear_cut_cont.pdf}			
-		\end{figure}
-	\end{block}\vspace{-8mm}
-
-\end{frame}
-
-\begin{frame}
-	\vspace{-2mm}
-	\begin{block}{Run 8929: very preliminary $t$-distribution + theory plot (right)}
-		\begin{figure}
-			\includegraphics[width=0.65\textwidth]{Figures/pA/8929/t_distribution.pdf}
-			\includegraphics[width=0.33\textwidth]{Figures/pA/Cross_section_at_4_5_sigma_new.pdf}
-		\end{figure}
-		\vspace{-5mm}
-		\begin{itemize}
-			\item not normalized yet
-			\item Run 8928: similar structure, less event per arm ($\approx2\times10^{4}$)
-		\end{itemize}			
+			\includegraphics[width=0.46\textwidth]{signal_to_bkg_fill_4496_data_from_cut_definition.pdf}
+		\end{figure}\vspace{-4mm}
 	\end{block}
 
+	
 \end{frame}
-
 
 \begin{frame}\scriptsize
-	\begin{block}{Summary}
-	\begin{itemize}\scriptsize
-			\item ATS optics is more stable than expected (Run 3)
-			\item Optical functions replaces "optics parametrization" for 2017 and 18 (x-angle)
-			\item 2018 optics constraints: more information than 2017
-			\item Analytical formulae compared to CMSSW 
-			\begin{itemize}\scriptsize
-				\item About 9 times faster
-				\item Gives close numerical results to official reco.
-			\end{itemize}
-	\end{itemize}	
+	\begin{block}{Summary}\scriptsize
+
+		\begin{itemize}
+			\item New and reliable method for "neck" position measurement
+			\item Applied for available $x$-angles: remains close to 2017 
+			\item Rigorous test of alignment / optics assumptions
+			\item Beam divergence notes
+		\end{itemize}\vspace{10mm}
+		{\bf Note}: alignment data with more $x$-angle combination would be useful. Now we have almost only 130~$\mu$rad!
 	\end{block}
 
+	
 \end{frame}
+
+
 
 \end{document}
